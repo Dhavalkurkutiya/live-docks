@@ -6,6 +6,7 @@ import "./globals.css";
 import { Metadata } from "next";
 import { ClerkProvider } from "@clerk/nextjs";
 import { dark } from "@clerk/themes";
+import Provider from "./Provider";
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -40,7 +41,9 @@ export default function RootLayout({
             fontSans.variable
           )}
         >
+          <Provider>
           {children}
+          </Provider>
         </body>
       </html>
     </ClerkProvider>
