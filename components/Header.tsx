@@ -1,11 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
 
-
 const Header = ({ children }: HeaderProps) => {
   return (
     <div className="header">
-      <Link href="/" className="md:flex-1 ">
+      <Link href="/" className="md:flex-1">
         <Image
           src="/assets/icons/logo.svg"
           alt="Logo with name"
@@ -14,7 +13,7 @@ const Header = ({ children }: HeaderProps) => {
           className="hidden md:block"
         />
         <Image
-          src="/assets/icons/logo.svg"
+          src="/assets/icons/logo-icon.svg"
           alt="Logo"
           width={32}
           height={32}
